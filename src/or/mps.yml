@@ -1,0 +1,14 @@
+LoginPage:
+  elements:
+    - elementName: brokerUsername
+      locatorProperty:
+      value: "Hello YAML"
+    - elementName: password
+      locatorProperty:
+      value: 
+    - elementName: username
+      locatorProperty:
+      value: 
+    - elementName: password
+      locatorProperty:
+      value: 
