@@ -60,10 +60,11 @@ Before({ tags: '@debug' }, async function (this: ICustomWorld) {
 Before(async function (this: ICustomWorld, { pickle }: ITestCaseHookParameter) {
   this.startTime = new Date();
   this.testName = pickle.name.replace(/\W/g, '-');
-  this.context = await browser.newContext({
+  this.context = await browser.newContext(
+    {
     acceptDownloads: true,
     recordVideo: process.env.PWVIDEO ? { dir: 'screenshots' } : undefined,
-    viewport: { width: 1200, height: 800 },
+    viewport: { width: 1920, height: 1080 },
   });
   this.server = await request.newContext({
     baseURL: config.BASE_API_URL,
