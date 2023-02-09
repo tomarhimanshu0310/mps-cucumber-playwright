@@ -18,7 +18,7 @@ npm install
 ```
 
 
-2. For execution entire test suite on all available browsers simultaneously execute below command where "ENV" can be "qa" or "dev", `Test Cases are present in "tests" folder`:
+2. For execution entire test suite on all available browsers simultaneously execute below command where "ENV" can be "qa" or "dev", `Test Cases are present in "features" folder`:
 
 ```JS
 npm run all
